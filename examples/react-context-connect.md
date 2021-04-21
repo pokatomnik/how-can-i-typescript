@@ -28,7 +28,7 @@ interface IContextValue {
 }
 
 const MyContext = React.createContext<IContextValue>({
-  footer: "Footer",
+  footer: 'Footer',
 });
 ```
 

@@ -27,16 +27,16 @@ And we need a function that makes an instance of any of them.
 Typically, we just invoke a constructor Itself to make an instance of the particular class.
 
 ```typescript
-const foo = new Foo("hello", 42);
+const foo = new Foo('hello', 42);
 ```
 
 But there are some cases when we can't.
 So we need a function like this:
 
 ```typescript
-const foo: Foo = make(Foo, "hello", 42);
-const bar: Bar = make(Bar, "hello", 42);
-const baz: Baz = make(Baz, "hello", 42);
+const foo: Foo = make(Foo, 'hello', 42);
+const bar: Bar = make(Bar, 'hello', 42);
+const baz: Baz = make(Baz, 'hello', 42);
 ```
 
 Typescript has a great feature that allows us to do that.

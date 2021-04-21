@@ -29,10 +29,10 @@ function wrap<R extends unknown, A extends Array<unknown>>(
   fn: (...args: A) => R
 ): (...args: A) => R {
   return function (...args: A): R {
-    console.log("Here is the list of arguments:");
+    console.log('Here is the list of arguments:');
     console.log(...args);
     const result = fn(...args);
-    console.log("Here is the result");
+    console.log('Here is the result');
     console.log(result);
     return result;
   };
